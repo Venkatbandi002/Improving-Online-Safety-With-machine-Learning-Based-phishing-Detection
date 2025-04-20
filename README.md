@@ -13,11 +13,17 @@ Install dependencies:
 
 (If no requirements.txt file, manually install using:)
 > pip install flask
+
 > pip install flask_sqlalchemy
+
 > pip install werkzeug
+
 > pip install joblib
+
 > pip install pandas
+
 > pip install tldextract
+
 > pip install requests
 
 ----------------------------------------------
