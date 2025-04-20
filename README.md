@@ -37,7 +37,8 @@ FILES STRUCTURE
     - register.html     : Registration page
     - chat.html         : Forum/chat page
 - static/               : (optional for CSS, JS if used)
-- posts.db              : SQLite database (will be created automatically)
+- instance/
+    - posts.db          : SQLite database (will be created automatically)
 
 ----------------------------------------------
 HOW TO RUN
