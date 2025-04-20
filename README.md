@@ -31,13 +31,13 @@ FILES STRUCTURE
 ----------------------------------------------
 - app.py                : Main application file
 - phishing_detector.pkl : Trained ML model (required for predictions)
-- templates/
+- templates/ 📂
     - index.html        : Home page
     - login.html        : Login page
     - register.html     : Registration page
     - chat.html         : Forum/chat page
-- static/               : (optional for CSS, JS if used)
-- instance/
+- static/ 📂               : (optional for CSS, JS if used)
+- instance/ 📂
     - posts.db          : SQLite database (will be created automatically)
 
 ----------------------------------------------
