@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register - Phishing Detector</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='logo.png') }}">
+    <style>
+        body {
+            background: url("/static/Background.png") no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Hides both x and y scrollbars */
+            height: 100%;
+        }
+    
+        .glass-container {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 15px;
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            color: #fff;
+        }
+    
+        .card {
+            background: rgba(255, 255, 255, 0.15) !important;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: none;
+            border-radius: 20px;
+            color: #fff;
+        }
+    
+        input, textarea, .form-control, .form-check-input {
+            background-color: rgba(255,255,255,0.2) !important;
+            color: #fff !important;
+            border: none;
+        }
+    
+        input::placeholder, textarea::placeholder {
+            color: #e0e0e0;
+        }
+    
+        .btn {
+            font-weight: bold;
+        }
+    
+        .navbar {
+            backdrop-filter: blur(10px);
+            background: rgba(0, 0, 0, 0.6) !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="/">
+                <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" width="30" height="30" class="d-inline-block align-text-top me-2">
+                Phishing Detector
+            </a>            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/community">Community</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/register">Signup</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container d-flex justify-content-center align-items-center vh-100">
+        <div class="card p-4 shadow" style="max-width: 500px; width: 100%;">
+            <h3 class="text-center mb-4">Create an Account</h3>
+
+            {% with messages = get_flashed_messages() %}
+              {% if messages %}
+                <div class="alert alert-danger">
+                  {{ messages[0] }}
+                </div>
+              {% endif %}
+            {% endwith %}
+
+            <form method="POST">
+                <div class="mb-3">
+                    <input type="text" name="username" class="form-control" placeholder="Username" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+                </div>
+                <div class="mb-3">
+                    <input type="password" name="password" class="form-control" placeholder="Password (min 8 characters)" required>
+                </div>
+                <div class="mb-3">
+                    <input type="password" name="confirm_password" class="form-control" placeholder="Re-enter Password" required>
+                </div>
+                <button type="submit" class="btn btn-success w-100">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
