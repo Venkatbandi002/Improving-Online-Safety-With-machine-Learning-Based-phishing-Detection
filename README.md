@@ -67,6 +67,7 @@ NOTES
 ----------------------------------------------
 - Make sure the database schema matches your models. If you've added new columns (like email), delete the old posts.db and let Flask create a new one:
 > Delete posts.db
+
 > Then run app.py to auto-create the DB again.
 
 ----------------------------------------------
