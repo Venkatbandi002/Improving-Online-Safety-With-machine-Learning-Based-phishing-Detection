@@ -64,6 +64,12 @@ FEATURES
 - Secure login/logout system.
 
 ----------------------------------------------
+Training
+----------------------------------------------
+- Used two datasets to train the model.
+- The final model consistes of 3 individual model stacked together.
+
+----------------------------------------------
 NOTES
 ----------------------------------------------
 - Make sure the database schema matches your models. If you've added new columns (like email), delete the old posts.db and let Flask create a new one:
