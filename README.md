@@ -68,6 +68,7 @@ Training
 ----------------------------------------------
 - Used two datasets to train the model.
 - The final model consistes of 3 individual model stacked together.
+- The model is later used in the main application
 
 ----------------------------------------------
 NOTES
