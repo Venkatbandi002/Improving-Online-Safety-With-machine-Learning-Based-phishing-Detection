@@ -79,3 +79,13 @@ NOTES
 > Then run app.py to auto-create the DB again.
 
 ----------------------------------------------
+SCREENSHOT
+----------------------------------------------
+- Home:
+<img width="1919" height="1079" alt="Screenshot 2025-07-29 173756" src="https://github.com/user-attachments/assets/8c97107a-cf15-4caf-89b9-bb9432017573" />
+- Legit website:
+<img width="1919" height="1079" alt="Screenshot 2025-07-29 173914" src="https://github.com/user-attachments/assets/cbd31db2-d170-4f40-a226-43c3ed16a335" />
+- Phishing Website:
+<img width="1919" height="1079" alt="Screenshot 2025-07-29 173921" src="https://github.com/user-attachments/assets/6e9e2c5a-e497-4420-bb47-c6a710b1c0ae" />
+- Community page:
+<img width="1919" height="1079" alt="Screenshot 2025-07-29 173901" src="https://github.com/user-attachments/assets/45adf569-db0a-4fab-be60-2e4ff9aae1ea" />
